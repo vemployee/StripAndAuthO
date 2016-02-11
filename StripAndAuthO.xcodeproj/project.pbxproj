@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7289E2AA1C6B214100E0334A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7289E2A81C6B214100E0334A /* Main.storyboard */; };
+		7289E2AC1C6B214100E0334A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7289E2AB1C6B214100E0334A /* Assets.xcassets */; };
+		7289E2AF1C6B214100E0334A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7289E2AD1C6B214100E0334A /* LaunchScreen.storyboard */; };
+		7289E2B91C6B2EDB00E0334A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7289E2B71C6B2EDB00E0334A /* AppDelegate.swift */; };
+		7289E2BA1C6B2EDB00E0334A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7289E2B81C6B2EDB00E0334A /* ViewController.swift */; };
+		7289E2BC1C6B2EF200E0334A /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7289E2BB1C6B2EF200E0334A /* SignUpVC.swift */; };
+		7289E2BE1C6B314300E0334A /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7289E2BD1C6B314300E0334A /* LogInVC.swift */; };
+		7289E2C01C6B328E00E0334A /* ProductVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7289E2BF1C6B328E00E0334A /* ProductVC.swift */; };
+		7289E2C21C6B374900E0334A /* OrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7289E2C11C6B374900E0334A /* OrderVC.swift */; };
+		7289E2C81C6B452200E0334A /* Stripe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7289E2C71C6B452200E0334A /* Stripe.framework */; };
+		7289E2E11C6B5AB600E0334A /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7289E2CF1C6B5AB600E0334A /* AFHTTPRequestOperation.m */; };
+		7289E2E21C6B5AB600E0334A /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7289E2D11C6B5AB600E0334A /* AFHTTPRequestOperationManager.m */; };
+		7289E2E31C6B5AB600E0334A /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7289E2D31C6B5AB600E0334A /* AFHTTPSessionManager.m */; };
+		7289E2E41C6B5AB600E0334A /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7289E2D61C6B5AB600E0334A /* AFNetworkReachabilityManager.m */; };
+		7289E2E51C6B5AB600E0334A /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7289E2D81C6B5AB600E0334A /* AFSecurityPolicy.m */; };
+		7289E2E61C6B5AB600E0334A /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7289E2DA1C6B5AB600E0334A /* AFURLConnectionOperation.m */; };
+		7289E2E71C6B5AB600E0334A /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 7289E2DC1C6B5AB600E0334A /* AFURLRequestSerialization.m */; };
+		7289E2E81C6B5AB600E0334A /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 7289E2DE1C6B5AB600E0334A /* AFURLResponseSerialization.m */; };
+		7289E2E91C6B5AB600E0334A /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7289E2E01C6B5AB600E0334A /* AFURLSessionManager.m */; };
+		72E956811C6C428D004EF7E6 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E956801C6C428D004EF7E6 /* FBSDKCoreKit.framework */; };
+		72E956841C6C455B004EF7E6 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E956821C6C455B004EF7E6 /* FBSDKLoginKit.framework */; };
+		72E956851C6C455B004EF7E6 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E956831C6C455B004EF7E6 /* FBSDKShareKit.framework */; };
+		72E956891C6C6D6D004EF7E6 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E956881C6C6D6D004EF7E6 /* MBProgressHUD.m */; };
+		72E9568B1C6C94E9004EF7E6 /* OrderSuccessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E9568A1C6C94E9004EF7E6 /* OrderSuccessVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7289E2A11C6B214100E0334A /* StripAndAuthO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StripAndAuthO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7289E2A91C6B214100E0334A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7289E2AB1C6B214100E0334A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7289E2AE1C6B214100E0334A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7289E2B01C6B214100E0334A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7289E2B71C6B2EDB00E0334A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7289E2B81C6B2EDB00E0334A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7289E2BB1C6B2EF200E0334A /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		7289E2BD1C6B314300E0334A /* LogInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInVC.swift; sourceTree = "<group>"; };
+		7289E2BF1C6B328E00E0334A /* ProductVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductVC.swift; sourceTree = "<group>"; };
+		7289E2C11C6B374900E0334A /* OrderVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderVC.swift; sourceTree = "<group>"; };
+		7289E2C71C6B452200E0334A /* Stripe.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Stripe.framework; sourceTree = "<group>"; };
+		7289E2C91C6B460A00E0334A /* StripAndAuthO-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StripAndAuthO-Bridging-Header.h"; sourceTree = "<group>"; };
+		7289E2CE1C6B5AB600E0334A /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		7289E2CF1C6B5AB600E0334A /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		7289E2D01C6B5AB600E0334A /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		7289E2D11C6B5AB600E0334A /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		7289E2D21C6B5AB600E0334A /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		7289E2D31C6B5AB600E0334A /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		7289E2D41C6B5AB600E0334A /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		7289E2D51C6B5AB600E0334A /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		7289E2D61C6B5AB600E0334A /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		7289E2D71C6B5AB600E0334A /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		7289E2D81C6B5AB600E0334A /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		7289E2D91C6B5AB600E0334A /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		7289E2DA1C6B5AB600E0334A /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		7289E2DB1C6B5AB600E0334A /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		7289E2DC1C6B5AB600E0334A /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		7289E2DD1C6B5AB600E0334A /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		7289E2DE1C6B5AB600E0334A /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		7289E2DF1C6B5AB600E0334A /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		7289E2E01C6B5AB600E0334A /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		72E956801C6C428D004EF7E6 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		72E956821C6C455B004EF7E6 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		72E956831C6C455B004EF7E6 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		72E956871C6C6D6D004EF7E6 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		72E956881C6C6D6D004EF7E6 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		72E9568A1C6C94E9004EF7E6 /* OrderSuccessVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderSuccessVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7289E29E1C6B214100E0334A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72E956851C6C455B004EF7E6 /* FBSDKShareKit.framework in Frameworks */,
+				7289E2C81C6B452200E0334A /* Stripe.framework in Frameworks */,
+				72E956811C6C428D004EF7E6 /* FBSDKCoreKit.framework in Frameworks */,
+				72E956841C6C455B004EF7E6 /* FBSDKLoginKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7289E2981C6B214100E0334A = {
+			isa = PBXGroup;
+			children = (
+				7289E2A31C6B214100E0334A /* StripAndAuthO */,
+				7289E2A21C6B214100E0334A /* Products */,
+				7289E2C91C6B460A00E0334A /* StripAndAuthO-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		7289E2A21C6B214100E0334A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7289E2A11C6B214100E0334A /* StripAndAuthO.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7289E2A31C6B214100E0334A /* StripAndAuthO */ = {
+			isa = PBXGroup;
+			children = (
+				7289E2C61C6B450700E0334A /* framework */,
+				7289E2B61C6B2EDB00E0334A /* MainVC */,
+				7289E2A81C6B214100E0334A /* Main.storyboard */,
+				7289E2AB1C6B214100E0334A /* Assets.xcassets */,
+				7289E2AD1C6B214100E0334A /* LaunchScreen.storyboard */,
+				7289E2B01C6B214100E0334A /* Info.plist */,
+			);
+			path = StripAndAuthO;
+			sourceTree = "<group>";
+		};
+		7289E2B61C6B2EDB00E0334A /* MainVC */ = {
+			isa = PBXGroup;
+			children = (
+				7289E2B71C6B2EDB00E0334A /* AppDelegate.swift */,
+				7289E2B81C6B2EDB00E0334A /* ViewController.swift */,
+				7289E2BB1C6B2EF200E0334A /* SignUpVC.swift */,
+				7289E2BD1C6B314300E0334A /* LogInVC.swift */,
+				7289E2BF1C6B328E00E0334A /* ProductVC.swift */,
+				7289E2C11C6B374900E0334A /* OrderVC.swift */,
+				72E9568A1C6C94E9004EF7E6 /* OrderSuccessVC.swift */,
+			);
+			path = MainVC;
+			sourceTree = "<group>";
+		};
+		7289E2C61C6B450700E0334A /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				72E956861C6C6D6D004EF7E6 /* ProcessHud */,
+				72E956821C6C455B004EF7E6 /* FBSDKLoginKit.framework */,
+				72E956831C6C455B004EF7E6 /* FBSDKShareKit.framework */,
+				72E956801C6C428D004EF7E6 /* FBSDKCoreKit.framework */,
+				7289E2CD1C6B5AB600E0334A /* AFNetworking */,
+				7289E2C71C6B452200E0334A /* Stripe.framework */,
+			);
+			path = framework;
+			sourceTree = "<group>";
+		};
+		7289E2CD1C6B5AB600E0334A /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				7289E2CE1C6B5AB600E0334A /* AFHTTPRequestOperation.h */,
+				7289E2CF1C6B5AB600E0334A /* AFHTTPRequestOperation.m */,
+				7289E2D01C6B5AB600E0334A /* AFHTTPRequestOperationManager.h */,
+				7289E2D11C6B5AB600E0334A /* AFHTTPRequestOperationManager.m */,
+				7289E2D21C6B5AB600E0334A /* AFHTTPSessionManager.h */,
+				7289E2D31C6B5AB600E0334A /* AFHTTPSessionManager.m */,
+				7289E2D41C6B5AB600E0334A /* AFNetworking.h */,
+				7289E2D51C6B5AB600E0334A /* AFNetworkReachabilityManager.h */,
+				7289E2D61C6B5AB600E0334A /* AFNetworkReachabilityManager.m */,
+				7289E2D71C6B5AB600E0334A /* AFSecurityPolicy.h */,
+				7289E2D81C6B5AB600E0334A /* AFSecurityPolicy.m */,
+				7289E2D91C6B5AB600E0334A /* AFURLConnectionOperation.h */,
+				7289E2DA1C6B5AB600E0334A /* AFURLConnectionOperation.m */,
+				7289E2DB1C6B5AB600E0334A /* AFURLRequestSerialization.h */,
+				7289E2DC1C6B5AB600E0334A /* AFURLRequestSerialization.m */,
+				7289E2DD1C6B5AB600E0334A /* AFURLResponseSerialization.h */,
+				7289E2DE1C6B5AB600E0334A /* AFURLResponseSerialization.m */,
+				7289E2DF1C6B5AB600E0334A /* AFURLSessionManager.h */,
+				7289E2E01C6B5AB600E0334A /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		72E956861C6C6D6D004EF7E6 /* ProcessHud */ = {
+			isa = PBXGroup;
+			children = (
+				72E956871C6C6D6D004EF7E6 /* MBProgressHUD.h */,
+				72E956881C6C6D6D004EF7E6 /* MBProgressHUD.m */,
+			);
+			path = ProcessHud;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7289E2A01C6B214100E0334A /* StripAndAuthO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7289E2B31C6B214100E0334A /* Build configuration list for PBXNativeTarget "StripAndAuthO" */;
+			buildPhases = (
+				7289E29D1C6B214100E0334A /* Sources */,
+				7289E29E1C6B214100E0334A /* Frameworks */,
+				7289E29F1C6B214100E0334A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StripAndAuthO;
+			productName = StripAndAuthO;
+			productReference = 7289E2A11C6B214100E0334A /* StripAndAuthO.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7289E2991C6B214100E0334A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = mls;
+				TargetAttributes = {
+					7289E2A01C6B214100E0334A = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = PLURSQEEM8;
+						SystemCapabilities = {
+							com.apple.OMC = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 7289E29C1C6B214100E0334A /* Build configuration list for PBXProject "StripAndAuthO" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7289E2981C6B214100E0334A;
+			productRefGroup = 7289E2A21C6B214100E0334A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7289E2A01C6B214100E0334A /* StripAndAuthO */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7289E29F1C6B214100E0334A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7289E2AF1C6B214100E0334A /* LaunchScreen.storyboard in Resources */,
+				7289E2AC1C6B214100E0334A /* Assets.xcassets in Resources */,
+				7289E2AA1C6B214100E0334A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7289E29D1C6B214100E0334A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7289E2E91C6B5AB600E0334A /* AFURLSessionManager.m in Sources */,
+				7289E2BA1C6B2EDB00E0334A /* ViewController.swift in Sources */,
+				7289E2C21C6B374900E0334A /* OrderVC.swift in Sources */,
+				7289E2E41C6B5AB600E0334A /* AFNetworkReachabilityManager.m in Sources */,
+				7289E2BC1C6B2EF200E0334A /* SignUpVC.swift in Sources */,
+				72E9568B1C6C94E9004EF7E6 /* OrderSuccessVC.swift in Sources */,
+				7289E2E61C6B5AB600E0334A /* AFURLConnectionOperation.m in Sources */,
+				7289E2E31C6B5AB600E0334A /* AFHTTPSessionManager.m in Sources */,
+				7289E2E71C6B5AB600E0334A /* AFURLRequestSerialization.m in Sources */,
+				7289E2BE1C6B314300E0334A /* LogInVC.swift in Sources */,
+				7289E2C01C6B328E00E0334A /* ProductVC.swift in Sources */,
+				7289E2B91C6B2EDB00E0334A /* AppDelegate.swift in Sources */,
+				7289E2E21C6B5AB600E0334A /* AFHTTPRequestOperationManager.m in Sources */,
+				7289E2E51C6B5AB600E0334A /* AFSecurityPolicy.m in Sources */,
+				7289E2E81C6B5AB600E0334A /* AFURLResponseSerialization.m in Sources */,
+				7289E2E11C6B5AB600E0334A /* AFHTTPRequestOperation.m in Sources */,
+				72E956891C6C6D6D004EF7E6 /* MBProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7289E2A81C6B214100E0334A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7289E2A91C6B214100E0334A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7289E2AD1C6B214100E0334A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7289E2AE1C6B214100E0334A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7289E2B11C6B214100E0334A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7289E2B21C6B214100E0334A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7289E2B41C6B214100E0334A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/StripAndAuthO/framework",
+				);
+				INFOPLIST_FILE = StripAndAuthO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = mls.stripandautho;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "StripAndAuthO-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7289E2B51C6B214100E0334A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/StripAndAuthO/framework",
+				);
+				INFOPLIST_FILE = StripAndAuthO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = mls.stripandautho;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "StripAndAuthO-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7289E29C1C6B214100E0334A /* Build configuration list for PBXProject "StripAndAuthO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7289E2B11C6B214100E0334A /* Debug */,
+				7289E2B21C6B214100E0334A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7289E2B31C6B214100E0334A /* Build configuration list for PBXNativeTarget "StripAndAuthO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7289E2B41C6B214100E0334A /* Debug */,
+				7289E2B51C6B214100E0334A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7289E2991C6B214100E0334A /* Project object */;
+}
